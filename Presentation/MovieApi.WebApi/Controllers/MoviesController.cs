@@ -40,7 +40,7 @@ namespace MovieApi.WebApi.Controllers
         public async Task<IActionResult> CreateMovie(CreateMovieCommand command)
         {
             await _createMovieCommandHandler.Handle(command);
-            return Ok("Film ekleme işşlemi başarılı!!");
+            return Ok("Film ekleme işlemi başarılı!!");
         }
 
         [HttpDelete]
