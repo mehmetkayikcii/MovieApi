@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace MovieApi.Application.Features.CQRSDesignPattern.Handlers.MovieHandlers
 {
-    public class GetMovieByIdQuerHandler
+    public class GetMovieByIdQueryHandler
     {
         private readonly MovieContext _context;
 
-        public GetMovieByIdQuerHandler(MovieContext context)
+        public GetMovieByIdQueryHandler(MovieContext context)
         {
             _context = context;
         }

@@ -19,7 +19,7 @@ namespace MovieApi.WebApi.Controllers
         public CategoriesController(GetCategoryQueryHandler getCategoryQueryHandler, GetCategoryByIdQueryHandler getCategoryByIdQueryHandler, CreateCategoryCommandHandler createCategoryCommandHandler, UpdateCategoryCommandHandler updateCategoryCommandHandler, RemoveCategoryCommandHandler removeCategoryCommandHandler)
         {
             _getCategoryQueryHandler = getCategoryQueryHandler;
-            this.getCategoryByIdQueryHandler = getCategoryByIdQueryHandler;
+            _getCategoryByIdQueryHandler = getCategoryByIdQueryHandler;
             _createCategoryCommandHandler = createCategoryCommandHandler;
             _updateCategoryCommandHandler = updateCategoryCommandHandler;
             _removeCategoryCommandHandler = removeCategoryCommandHandler;
